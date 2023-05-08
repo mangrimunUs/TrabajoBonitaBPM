@@ -1,8 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <organization:Organization xmlns:organization="http://documentation.bonitasoft.com/organization-xml-schema/1.1" name="Hercules" description="Organizacion de la empresa Hercules Seguridad">
   <customUserInfoDefinitions/>
-  <users/>
-  <roles/>
-  <groups/>
+  <users>
+    <user userName="Usuario1">
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues/>
+    </user>
+  </users>
+  <roles>
+    <role name="Director">
+      <displayName>Director</displayName>
+    </role>
+    <role name="Empleado">
+      <displayName>Empleado</displayName>
+    </role>
+  </roles>
+  <groups>
+    <group name="Administradores">
+      <displayName>Administradores</displayName>
+    </group>
+    <group name="Tecnicos">
+      <displayName>Técnicos</displayName>
+    </group>
+    <group name="Ventas">
+      <displayName>Ventas</displayName>
+    </group>
+    <group name="Clientes">
+      <displayName>Clientes</displayName>
+    </group>
+  </groups>
   <memberships/>
 </organization:Organization>
