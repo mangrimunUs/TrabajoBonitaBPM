@@ -5,14 +5,13 @@
   <groupId>com.company</groupId>
   <artifactId>hercules-seguridad</artifactId>
   <version>0.0.1</version>
-  <name>Hercules-Seguridad</name>
+  <name>TrabajoBonitaBPM</name>
   <description>Trabajo de BonitaBPM 
 Integrantes:
 Alberto Aguilar Martín
 Elena Avilés Gil
 Manuel Grijuela Muñoz
-Maripaz Llavero Ogalla
-</description>
+Maripaz Llavero Ogalla</description>
   <properties>
     <bonita.runtime.version>7.15.0</bonita.runtime.version>
     <maven-install-plugin.version>3.0.0-M1</maven-install-plugin.version>
