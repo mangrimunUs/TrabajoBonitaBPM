@@ -2,7 +2,118 @@
 <organization:Organization xmlns:organization="http://documentation.bonitasoft.com/organization-xml-schema/1.1" name="Hercules" description="Organizacion de la empresa Hercules Seguridad">
   <customUserInfoDefinitions/>
   <users>
-    <user userName="Usuario1">
+    <user userName="alberto.aguilar">
+      <firstName>Alberto</firstName>
+      <lastName>Aguilar</lastName>
+      <jobTitle>CFO</jobTitle>
+      <manager>admin</manager>
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues/>
+    </user>
+    <user userName="manuel.grijuela">
+      <firstName>Manuel</firstName>
+      <lastName>Grijuela</lastName>
+      <jobTitle>CEO</jobTitle>
+      <manager>admin</manager>
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues/>
+    </user>
+    <user userName="maripaz.llavero">
+      <firstName>María de la Paz</firstName>
+      <lastName>Llavero</lastName>
+      <jobTitle>Jefa de RRHH</jobTitle>
+      <manager>admin</manager>
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues/>
+    </user>
+    <user userName="elena.aviles">
+      <firstName>Elena</firstName>
+      <lastName>Avilés</lastName>
+      <jobTitle>Supervisor Jefe</jobTitle>
+      <manager>admin</manager>
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues/>
+    </user>
+    <user userName="admin">
+      <firstName>Administrador</firstName>
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues/>
+    </user>
+    <user userName="monica.galindo">
+      <firstName>Mónica</firstName>
+      <lastName>Galindo</lastName>
+      <jobTitle>Jefa de Ventas</jobTitle>
+      <manager>elena.aviles</manager>
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues/>
+    </user>
+    <user userName="josefa.ramirez">
+      <firstName>Josefa</firstName>
+      <lastName>Ramírez</lastName>
+      <jobTitle>Comercial</jobTitle>
+      <manager>monica.galindo</manager>
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues/>
+    </user>
+    <user userName="mario.delascuevas">
+      <firstName>Mario</firstName>
+      <lastName>de las Cuevas</lastName>
+      <jobTitle>Comercial</jobTitle>
+      <manager>monica.galindo</manager>
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues/>
+    </user>
+    <user userName="pascual.rodriguez">
+      <firstName>Pascual</firstName>
+      <lastName>Rodríguez</lastName>
+      <jobTitle>Jefe de Instalación</jobTitle>
+      <manager>elena.aviles</manager>
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues/>
+    </user>
+    <user userName="ignacio.escolano">
+      <firstName>Ignacio</firstName>
+      <lastName>Escolano</lastName>
+      <jobTitle>Instalador de alarmas</jobTitle>
+      <manager>pascual.rodriguez</manager>
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues/>
+    </user>
+    <user userName="mariano.lopez">
+      <firstName>Mariano</firstName>
+      <lastName>López</lastName>
+      <jobTitle>Instalador de alarmas</jobTitle>
+      <manager>pascual.rodriguez</manager>
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues/>
+    </user>
+    <user userName="yasmine.feroe">
+      <firstName>Yasmine</firstName>
+      <lastName>Feroe</lastName>
+      <jobTitle>Instalador de extintores</jobTitle>
+      <manager>pascual.rodriguez</manager>
       <personalData/>
       <professionalData/>
       <password encrypted="false">bpm</password>
@@ -10,8 +121,8 @@
     </user>
   </users>
   <roles>
-    <role name="Director">
-      <displayName>Director</displayName>
+    <role name="Jefe de departamento">
+      <displayName>Jefe departamento</displayName>
     </role>
     <role name="Empleado">
       <displayName>Empleado</displayName>
@@ -31,5 +142,66 @@
       <displayName>Clientes</displayName>
     </group>
   </groups>
-  <memberships/>
+  <memberships>
+    <membership>
+      <userName>alberto.aguilar</userName>
+      <roleName>Empleado</roleName>
+      <groupName>Administradores</groupName>
+    </membership>
+    <membership>
+      <userName>manuel.grijuela</userName>
+      <roleName>Jefe de departamento</roleName>
+      <groupName>Administradores</groupName>
+    </membership>
+    <membership>
+      <userName>maripaz.llavero</userName>
+      <roleName>Empleado</roleName>
+      <groupName>Administradores</groupName>
+    </membership>
+    <membership>
+      <userName>elena.aviles</userName>
+      <roleName>Empleado</roleName>
+      <groupName>Administradores</groupName>
+    </membership>
+    <membership>
+      <userName>admin</userName>
+      <roleName>Jefe de departamento</roleName>
+      <groupName>Administradores</groupName>
+    </membership>
+    <membership>
+      <userName>monica.galindo</userName>
+      <roleName>Jefe de departamento</roleName>
+      <groupName>Ventas</groupName>
+    </membership>
+    <membership>
+      <userName>josefa.ramirez</userName>
+      <roleName>Empleado</roleName>
+      <groupName>Ventas</groupName>
+    </membership>
+    <membership>
+      <userName>mario.delascuevas</userName>
+      <roleName>Empleado</roleName>
+      <groupName>Ventas</groupName>
+    </membership>
+    <membership>
+      <userName>pascual.rodriguez</userName>
+      <roleName>Jefe de departamento</roleName>
+      <groupName>Tecnicos</groupName>
+    </membership>
+    <membership>
+      <userName>ignacio.escolano</userName>
+      <roleName>Empleado</roleName>
+      <groupName>Tecnicos</groupName>
+    </membership>
+    <membership>
+      <userName>mariano.lopez</userName>
+      <roleName>Empleado</roleName>
+      <groupName>Tecnicos</groupName>
+    </membership>
+    <membership>
+      <userName>yasmine.feroe</userName>
+      <roleName>Empleado</roleName>
+      <groupName>Tecnicos</groupName>
+    </membership>
+  </memberships>
 </organization:Organization>
