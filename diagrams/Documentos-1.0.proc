@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:decision="http://www.bonitasoft.org/ns/studio/process/decision" xmlns:expression="http://www.bonitasoft.org/ns/studio/expression" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.3/notation" xmlns:process="http://www.bonitasoft.org/ns/studio/process" xsi:schemaLocation="http://www.bonitasoft.org/ns/studio/process/decision http://www.bonitasoft.org/ns/studio/process#//decision">
   <process:MainProcess xmi:id="_U891IO7wEe2yw5sFrkHHJA" name="Documentos" bonitaModelVersion="7.12.0-004">
-    <elements xmi:type="process:Pool" xmi:id="_U891Ie7wEe2yw5sFrkHHJA" name="Documentos de nuevas instalaciones">
+    <elements xmi:type="process:Pool" xmi:id="_U891Ie7wEe2yw5sFrkHHJA" name="Documento de nuevo contacto">
       <elements xmi:type="process:Lane" xmi:id="_U891Iu7wEe2yw5sFrkHHJA" name="Empleado ventas" actor="_em1SYO7wEe2yw5sFrkHHJA">
         <elements xmi:type="process:StartEvent" xmi:id="_U891I-7wEe2yw5sFrkHHJA" name="Inicio1" outgoing="_U891OO7wEe2yw5sFrkHHJA">
           <dynamicLabel xmi:type="expression:Expression" xmi:id="_U891JO7wEe2yw5sFrkHHJA" name="" content="" returnTypeFixed="true"/>
@@ -24,8 +24,13 @@
           <expectedDuration xmi:type="expression:Expression" xmi:id="_U891M-7wEe2yw5sFrkHHJA" name="" content="" returnType="java.lang.Long" returnTypeFixed="true"/>
         </elements>
       </elements>
+      <data xmi:type="process:BusinessObjectData" xmi:id="_Etjf4O7zEe2yw5sFrkHHJA" name="nuevoCliente" dataType="_U891VO7wEe2yw5sFrkHHJA" className="com.company.model.Cliente">
+        <defaultValue xmi:type="expression:Expression" xmi:id="_Zt34B-7zEe2yw5sFrkHHJA" name="initNuevoCliente()" content="def clienteVar = new com.company.model.Cliente()&#xD;&#xA;clienteVar.nombre = nuevoClienteInput?.nombre&#xD;&#xA;clienteVar.empresa = nuevoClienteInput?.empresa&#xD;&#xA;clienteVar.telefono = nuevoClienteInput?.telefono&#xD;&#xA;clienteVar.correo = nuevoClienteInput?.correo&#xD;&#xA;return clienteVar" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="com.company.model.Cliente">
+          <referencedElements xmi:type="process:ContractInput" xmi:id="_Zt34CO7zEe2yw5sFrkHHJA" name="nuevoClienteInput" type="COMPLEX"/>
+        </defaultValue>
+      </data>
       <formMapping xmi:type="process:FormMapping" xmi:id="_U891NO7wEe2yw5sFrkHHJA">
-        <targetForm xmi:type="expression:Expression" xmi:id="_U891Ne7wEe2yw5sFrkHHJA" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
+        <targetForm xmi:type="expression:Expression" xmi:id="_-4_VsO7xEe2yw5sFrkHHJA" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
       </formMapping>
       <overviewFormMapping xmi:type="process:FormMapping" xmi:id="_U891Nu7wEe2yw5sFrkHHJA">
         <targetForm xmi:type="expression:Expression" xmi:id="_U891N-7wEe2yw5sFrkHHJA" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
@@ -37,7 +42,20 @@
       <actors xmi:type="process:Actor" xmi:id="_U891O-7wEe2yw5sFrkHHJA" documentation="Este es un ejemplo de actor que está mapeado a cualquier usuario de la organización ACME" name="Employee actor"/>
       <actors xmi:type="process:Actor" xmi:id="_em1SYO7wEe2yw5sFrkHHJA" name="Empleado ventas" initiator="true"/>
       <actors xmi:type="process:Actor" xmi:id="_fzxmoO7wEe2yw5sFrkHHJA" name="Jefe ventas"/>
-      <contract xmi:type="process:Contract" xmi:id="_U891PO7wEe2yw5sFrkHHJA"/>
+      <contract xmi:type="process:Contract" xmi:id="_U891PO7wEe2yw5sFrkHHJA">
+        <inputs xmi:type="process:ContractInput" xmi:id="_Zt34AO7zEe2yw5sFrkHHJA" name="nuevoClienteInput" type="COMPLEX" dataReference="nuevoCliente">
+          <inputs xmi:type="process:ContractInput" xmi:id="_Zt34Ae7zEe2yw5sFrkHHJA" name="nombre"/>
+          <inputs xmi:type="process:ContractInput" xmi:id="_Zt34Au7zEe2yw5sFrkHHJA" name="empresa" type="BOOLEAN"/>
+          <inputs xmi:type="process:ContractInput" xmi:id="_Zt34A-7zEe2yw5sFrkHHJA" name="telefono"/>
+          <inputs xmi:type="process:ContractInput" xmi:id="_Zt34BO7zEe2yw5sFrkHHJA" name="correo"/>
+        </inputs>
+        <constraints xmi:type="process:ContractConstraint" xmi:id="_Zt34Be7zEe2yw5sFrkHHJA" expression="nuevoClienteInput?.nombre != null" errorMessage="nombre is mandatory for Cliente" name="mandatory_nuevoClienteInput_nombre">
+          <inputNames>nuevoClienteInput</inputNames>
+        </constraints>
+        <constraints xmi:type="process:ContractConstraint" xmi:id="_Zt34Bu7zEe2yw5sFrkHHJA" expression="nuevoClienteInput?.empresa != null" errorMessage="empresa is mandatory for Cliente" name="mandatory_nuevoClienteInput_empresa">
+          <inputNames>nuevoClienteInput</inputNames>
+        </constraints>
+      </contract>
       <searchIndexes xmi:type="process:SearchIndex" xmi:id="_U891Pe7wEe2yw5sFrkHHJA">
         <name xmi:type="expression:Expression" xmi:id="_U891Pu7wEe2yw5sFrkHHJA" content="" returnTypeFixed="true"/>
         <value xmi:type="expression:Expression" xmi:id="_U891P-7wEe2yw5sFrkHHJA" content="" returnTypeFixed="true"/>
@@ -78,13 +96,13 @@
           <children xmi:type="notation:DecorationNode" xmi:id="_U891W-7wEe2yw5sFrkHHJA" type="7002">
             <children xmi:type="notation:Shape" xmi:id="_U891XO7wEe2yw5sFrkHHJA" type="3005" element="_U891J-7wEe2yw5sFrkHHJA" fontName="Segoe UI" fillColor="14334392" lineColor="10710316">
               <children xmi:type="notation:DecorationNode" xmi:id="_U891Xe7wEe2yw5sFrkHHJA" type="5005"/>
-              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_U891Xu7wEe2yw5sFrkHHJA" x="160" y="60"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_U891Xu7wEe2yw5sFrkHHJA" x="160" y="84"/>
             </children>
             <children xmi:type="notation:Shape" xmi:id="_U891X-7wEe2yw5sFrkHHJA" type="3002" element="_U891I-7wEe2yw5sFrkHHJA" fontName="Segoe UI">
               <children xmi:type="notation:DecorationNode" xmi:id="_U891YO7wEe2yw5sFrkHHJA" type="5024">
                 <layoutConstraint xmi:type="notation:Location" xmi:id="_U891Ye7wEe2yw5sFrkHHJA" y="5"/>
               </children>
-              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_U891Yu7wEe2yw5sFrkHHJA" x="60" y="68"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_U891Yu7wEe2yw5sFrkHHJA" x="60" y="97"/>
             </children>
           </children>
           <styles xmi:type="notation:DescriptionStyle" xmi:id="_U891Y-7wEe2yw5sFrkHHJA"/>
