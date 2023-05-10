@@ -1,0 +1,31 @@
+{
+  "modelVersion" : "2.3",
+  "id" : "carteraClientes",
+  "name" : "carteraClientes",
+  "lastUpdate" : 1683698774705,
+  "rows" : [
+    [ ]
+  ],
+  "assets" : [
+    {
+      "id" : "9a369af9-85d4-4157-9a8f-2ab2ca42a89d",
+      "name" : "style.css",
+      "type" : "css",
+      "order" : 0,
+      "external" : false
+    },
+    {
+      "id" : "afcb600d-0b89-4b10-85dd-3b29c0aed2e9",
+      "name" : "localization.json",
+      "type" : "json",
+      "order" : 0,
+      "external" : false
+    }
+  ],
+  "inactiveAssets" : [ ],
+  "variables" : { },
+  "hasValidationError" : false,
+  "uuid" : "07dd2db8-1969-41b2-a778-6fdf77d34e2b",
+  "type" : "page",
+  "description" : "Page generated with Bonita UI designer"
+}
