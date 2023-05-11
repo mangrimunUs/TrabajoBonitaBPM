@@ -2,7 +2,7 @@
   "modelVersion" : "2.3",
   "id" : "carteraClientes",
   "name" : "carteraClientes",
-  "lastUpdate" : 1683794803743,
+  "lastUpdate" : 1683796229388,
   "rows" : [
     [
       {
@@ -47,6 +47,58 @@
               "id" : "pbContainer",
               "description" : "\"com.company.model.Cliente\" object from \"cliente\" variable",
               "rows" : [
+                [
+                  {
+                    "type" : "component",
+                    "dimension" : {
+                      "xs" : 12,
+                      "sm" : 12,
+                      "md" : 12,
+                      "lg" : 12
+                    },
+                    "propertyValues" : {
+                      "cssClasses" : {
+                        "type" : "constant",
+                        "value" : ""
+                      },
+                      "hidden" : {
+                        "type" : "constant",
+                        "value" : false
+                      },
+                      "allowHTML" : {
+                        "type" : "constant",
+                        "value" : false
+                      },
+                      "labelHidden" : {
+                        "type" : "constant",
+                        "value" : true
+                      },
+                      "label" : {
+                        "type" : "interpolation",
+                        "value" : "Default label"
+                      },
+                      "labelPosition" : {
+                        "type" : "constant",
+                        "value" : "top"
+                      },
+                      "labelWidth" : {
+                        "type" : "constant",
+                        "value" : 4
+                      },
+                      "text" : {
+                        "type" : "interpolation",
+                        "value" : "{{tecnico_ini}}"
+                      },
+                      "alignment" : {
+                        "type" : "constant",
+                        "value" : "left"
+                      }
+                    },
+                    "reference" : "d5b3b5d0-7649-4ade-b5cc-a4d2dd2b5fcd",
+                    "hasValidationError" : false,
+                    "id" : "pbText"
+                  }
+                ],
                 [
                   {
                     "type" : "component",
@@ -1207,6 +1259,13 @@
       "type" : "url",
       "value" : [
         "{{cliente_sistemas_cliente_sistemas_selected|lazyRef:'cliente'}}"
+      ],
+      "exposed" : false
+    },
+    "tecnico_ini" : {
+      "type" : "url",
+      "value" : [
+        "../API/system/session/1"
       ],
       "exposed" : false
     }
