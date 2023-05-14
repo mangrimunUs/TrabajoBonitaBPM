@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:connectorconfiguration="http://wwww.bonitasoft.org/model/connector/configuration" xmlns:decision="http://www.bonitasoft.org/ns/studio/process/decision" xmlns:definition="http://www.bonitasoft.org/ns/connector/definition/6.1" xmlns:expression="http://www.bonitasoft.org/ns/studio/expression" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.3/notation" xmlns:process="http://www.bonitasoft.org/ns/studio/process" xsi:schemaLocation="http://www.bonitasoft.org/ns/studio/process/decision http://www.bonitasoft.org/ns/studio/process#//decision">
   <process:MainProcess xmi:id="_ujpFwO_fEe29o8mxjNteZw" name="Revision" bonitaModelVersion="7.12.0-004">
-    <elements xmi:type="process:Pool" xmi:id="_ujpFwe_fEe29o8mxjNteZw" name="Pool">
+    <elements xmi:type="process:Pool" xmi:id="_ujpFwe_fEe29o8mxjNteZw" name="revision" displayName="Revisión">
       <elements xmi:type="process:Lane" xmi:id="_ujpFwu_fEe29o8mxjNteZw" name="Empleado (lane) " actor="_ujpF2-_fEe29o8mxjNteZw">
         <elements xmi:type="process:StartEvent" xmi:id="_ujpFw-_fEe29o8mxjNteZw" name="Inicio1" outgoing="_ujpF2O_fEe29o8mxjNteZw">
           <dynamicLabel xmi:type="expression:Expression" xmi:id="_ujpFxO_fEe29o8mxjNteZw" name="" content="" returnTypeFixed="true"/>
           <dynamicDescription xmi:type="expression:Expression" xmi:id="_ujpFxe_fEe29o8mxjNteZw" name="" content="" returnTypeFixed="true"/>
           <stepSummary xmi:type="expression:Expression" xmi:id="_ujpFxu_fEe29o8mxjNteZw" name="" content="" returnTypeFixed="true"/>
         </elements>
-        <elements xmi:type="process:ServiceTask" xmi:id="_upVr0O_kEe29o8mxjNteZw" name="Tarea1" outgoing="_2maskO_jEe29o8mxjNteZw" incoming="_ujpF2O_fEe29o8mxjNteZw">
+        <elements xmi:type="process:ServiceTask" xmi:id="_upVr0O_kEe29o8mxjNteZw" name="Consulta Odoo" outgoing="_2maskO_jEe29o8mxjNteZw" incoming="_ujpF2O_fEe29o8mxjNteZw">
           <dynamicLabel xmi:type="expression:Expression" xmi:id="_ujpFyO_fEe29o8mxjNteZw" name="" content="" returnTypeFixed="true"/>
           <dynamicDescription xmi:type="expression:Expression" xmi:id="_ujpFye_fEe29o8mxjNteZw" name="" content="" returnTypeFixed="true"/>
           <stepSummary xmi:type="expression:Expression" xmi:id="_ujpFyu_fEe29o8mxjNteZw" name="" content="" returnTypeFixed="true"/>
@@ -199,7 +199,7 @@
         <defaultValue xmi:type="expression:Expression" xmi:id="_LHuOcfJKEe2l8-s70FUcQQ" content=""/>
       </data>
       <formMapping xmi:type="process:FormMapping" xmi:id="_ujpF1O_fEe29o8mxjNteZw">
-        <targetForm xmi:type="expression:Expression" xmi:id="_7WqUAPJKEe2l8-s70FUcQQ" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
+        <targetForm xmi:type="expression:Expression" xmi:id="_kHj-EPJ0Ee2vTY1rg2mAxQ" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
       </formMapping>
       <overviewFormMapping xmi:type="process:FormMapping" xmi:id="_ujpF1u_fEe29o8mxjNteZw">
         <targetForm xmi:type="expression:Expression" xmi:id="_ujpF1-_fEe29o8mxjNteZw" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
@@ -264,7 +264,7 @@
             </children>
             <children xmi:type="notation:Shape" xmi:id="_upVr2e_kEe29o8mxjNteZw" type="3027" element="_upVr0O_kEe29o8mxjNteZw" fontName="Segoe UI" fillColor="14334392" lineColor="10710316">
               <children xmi:type="notation:DecorationNode" xmi:id="_upWS4e_kEe29o8mxjNteZw" type="5017"/>
-              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_upWS4O_kEe29o8mxjNteZw" x="160" y="60" width="100" height="50"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_upWS4O_kEe29o8mxjNteZw" x="160" y="60" width="114" height="57"/>
             </children>
             <children xmi:type="notation:Shape" xmi:id="_imRGEO_lEe29o8mxjNteZw" type="3005" element="_imP38O_lEe29o8mxjNteZw" fontName="Segoe UI" fillColor="14334392" lineColor="10710316">
               <children xmi:type="notation:DecorationNode" xmi:id="_imRGEu_lEe29o8mxjNteZw" type="5005"/>

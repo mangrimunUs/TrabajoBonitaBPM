@@ -2,7 +2,7 @@
   "modelVersion" : "2.3",
   "id" : "visValidacion",
   "name" : "visValidacion",
-  "lastUpdate" : 1684064010306,
+  "lastUpdate" : 1684081785627,
   "rows" : [
     [
       {
@@ -305,7 +305,7 @@
                   },
                   "allowHTML" : {
                     "type" : "constant",
-                    "value" : false
+                    "value" : true
                   },
                   "labelHidden" : {
                     "type" : "constant",
@@ -325,7 +325,7 @@
                   },
                   "text" : {
                     "type" : "interpolation",
-                    "value" : "Variable:\n{{listaNumeroSistemas}}\n{{listaTipos}}"
+                    "value" : "CRA: Central Receptora de Alarmas <br>\nVH: Videovigilancia Hogar<br>\nSPV: Seguridad Perimetral Vivienda<br>\nDV: Domótica para Viviendas<br>\nCCTV: Videovigilancia Empresa"
                   },
                   "alignment" : {
                     "type" : "constant",
@@ -381,6 +381,14 @@
                   "dimension" : {
                     "type" : "constant",
                     "value" : 12
+                  },
+                  "labelPosition" : {
+                    "type" : "constant",
+                    "value" : "top"
+                  },
+                  "labelWidth" : {
+                    "type" : "constant",
+                    "value" : 4
                   }
                 },
                 "reference" : "8c639dfb-583e-48d1-b9c5-3b1648fadbb8",
