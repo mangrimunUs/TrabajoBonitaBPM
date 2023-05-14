@@ -138,9 +138,6 @@
     <group name="Ventas">
       <displayName>Ventas</displayName>
     </group>
-    <group name="Clientes">
-      <displayName>Clientes</displayName>
-    </group>
   </groups>
   <memberships>
     <membership>
