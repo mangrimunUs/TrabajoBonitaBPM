@@ -36,6 +36,7 @@
                 <relationField type="AGGREGATION" reference="com.company.model.Cliente" fetchType="LAZY" name="cliente" nullable="false" collection="false"/>
                 <field type="DOUBLE" length="255" name="precio" nullable="false" collection="false"/>
                 <field type="BOOLEAN" length="255" name="garantia" nullable="true" collection="false"/>
+                <field type="BOOLEAN" length="255" name="aceptado" nullable="false" collection="false"/>
             </fields>
             <uniqueConstraints/>
             <queries/>
