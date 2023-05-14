@@ -2,7 +2,7 @@
   "modelVersion" : "2.3",
   "id" : "carteraClientes",
   "name" : "carteraClientes",
-  "lastUpdate" : 1683796229388,
+  "lastUpdate" : 1684064144201,
   "rows" : [
     [
       {
@@ -41,64 +41,24 @@
               "dimension" : {
                 "xs" : 12
               },
-              "propertyValues" : { },
+              "propertyValues" : {
+                "cssClasses" : {
+                  "type" : "constant",
+                  "value" : ""
+                },
+                "hidden" : {
+                  "type" : "constant",
+                  "value" : false
+                },
+                "repeatedCollection" : {
+                  "type" : "variable"
+                }
+              },
               "reference" : "2466b9b9-09b1-4ae9-bdca-71116c4572e7",
               "hasValidationError" : false,
               "id" : "pbContainer",
               "description" : "\"com.company.model.Cliente\" object from \"cliente\" variable",
               "rows" : [
-                [
-                  {
-                    "type" : "component",
-                    "dimension" : {
-                      "xs" : 12,
-                      "sm" : 12,
-                      "md" : 12,
-                      "lg" : 12
-                    },
-                    "propertyValues" : {
-                      "cssClasses" : {
-                        "type" : "constant",
-                        "value" : ""
-                      },
-                      "hidden" : {
-                        "type" : "constant",
-                        "value" : false
-                      },
-                      "allowHTML" : {
-                        "type" : "constant",
-                        "value" : false
-                      },
-                      "labelHidden" : {
-                        "type" : "constant",
-                        "value" : true
-                      },
-                      "label" : {
-                        "type" : "interpolation",
-                        "value" : "Default label"
-                      },
-                      "labelPosition" : {
-                        "type" : "constant",
-                        "value" : "top"
-                      },
-                      "labelWidth" : {
-                        "type" : "constant",
-                        "value" : 4
-                      },
-                      "text" : {
-                        "type" : "interpolation",
-                        "value" : "{{tecnico_ini}}"
-                      },
-                      "alignment" : {
-                        "type" : "constant",
-                        "value" : "left"
-                      }
-                    },
-                    "reference" : "d5b3b5d0-7649-4ade-b5cc-a4d2dd2b5fcd",
-                    "hasValidationError" : false,
-                    "id" : "pbText"
-                  }
-                ],
                 [
                   {
                     "type" : "component",
@@ -160,17 +120,46 @@
                         "type" : "constant",
                         "value" : false
                       },
-                      "disabled" : {
-                        "type" : "constant",
-                        "value" : false
-                      },
                       "allowHTML" : {
                         "type" : "constant",
                         "value" : false
                       },
-                      "label" : {
+                      "text" : {
                         "type" : "interpolation",
                         "value" : "CREAR"
+                      },
+                      "type" : {
+                        "type" : "constant",
+                        "value" : "process"
+                      },
+                      "targetUrl" : {
+                        "type" : "constant",
+                        "value" : "http://"
+                      },
+                      "pageToken" : {
+                        "type" : "constant"
+                      },
+                      "processName" : {
+                        "type" : "constant"
+                      },
+                      "processVersion" : {
+                        "type" : "constant"
+                      },
+                      "taskId" : {
+                        "type" : "constant"
+                      },
+                      "caseId" : {
+                        "type" : "constant"
+                      },
+                      "target" : {
+                        "type" : "constant",
+                        "value" : "_self"
+                      },
+                      "appToken" : {
+                        "type" : "constant"
+                      },
+                      "urlParams" : {
+                        "type" : "constant"
                       },
                       "alignment" : {
                         "type" : "constant",
@@ -178,59 +167,12 @@
                       },
                       "buttonStyle" : {
                         "type" : "constant",
-                        "value" : "primary"
-                      },
-                      "action" : {
-                        "type" : "constant",
-                        "value" : "Start process"
-                      },
-                      "assign" : {
-                        "type" : "constant",
-                        "value" : false
-                      },
-                      "url" : {
-                        "type" : "interpolation"
-                      },
-                      "responseStatusCode" : {
-                        "type" : "variable"
-                      },
-                      "dataToSend" : {
-                        "type" : "constant"
-                      },
-                      "dataFromSuccess" : {
-                        "type" : "variable"
-                      },
-                      "closeOnSuccess" : {
-                        "type" : "constant",
-                        "value" : false
-                      },
-                      "dataFromError" : {
-                        "type" : "variable"
-                      },
-                      "targetUrlOnSuccess" : {
-                        "type" : "interpolation"
-                      },
-                      "collectionToModify" : {
-                        "type" : "variable"
-                      },
-                      "modalId" : {
-                        "type" : "constant",
-                        "value" : ""
-                      },
-                      "collectionPosition" : {
-                        "type" : "constant",
-                        "value" : "Last"
-                      },
-                      "valueToAdd" : {
-                        "type" : "constant"
-                      },
-                      "removeItem" : {
-                        "type" : "variable"
+                        "value" : "success"
                       }
                     },
-                    "reference" : "f1be82fc-693d-4790-8c79-740ca1f2db41",
+                    "reference" : "7b3f8d27-a60b-4689-b4cf-2cace1ff5f8d",
                     "hasValidationError" : false,
-                    "id" : "pbButton"
+                    "id" : "pbLink"
                   }
                 ],
                 [
