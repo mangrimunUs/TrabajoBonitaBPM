@@ -2,7 +2,7 @@
   "modelVersion" : "2.3",
   "id" : "carteraClientes",
   "name" : "carteraClientes",
-  "lastUpdate" : 1684064144201,
+  "lastUpdate" : 1684081367021,
   "rows" : [
     [
       {
@@ -140,10 +140,12 @@
                         "type" : "constant"
                       },
                       "processName" : {
-                        "type" : "constant"
+                        "type" : "constant",
+                        "value" : "nuevoCliente"
                       },
                       "processVersion" : {
-                        "type" : "constant"
+                        "type" : "constant",
+                        "value" : "1.0"
                       },
                       "taskId" : {
                         "type" : "constant"
