@@ -215,12 +215,6 @@ Maripaz Llavero Ogalla</description>
       <version>42.5.1</version>
     </dependency>
     <dependency>
-      <groupId>com.company.model</groupId>
-      <artifactId>bdm-client</artifactId>
-      <version>1.0.0</version>
-      <scope>provided</scope>
-    </dependency>
-    <dependency>
       <groupId>org.bonitasoft.connectors</groupId>
       <artifactId>bonita-connector-database</artifactId>
       <version>2.0.3</version>
@@ -229,6 +223,12 @@ Maripaz Llavero Ogalla</description>
       <groupId>org.postgresql</groupId>
       <artifactId>postgresql</artifactId>
       <version>42.5.1</version>
+    </dependency>
+    <dependency>
+      <groupId>com.company.model</groupId>
+      <artifactId>bdm-client</artifactId>
+      <version>1.0.0</version>
+      <scope>provided</scope>
     </dependency>
   </dependencies>
   <build>
