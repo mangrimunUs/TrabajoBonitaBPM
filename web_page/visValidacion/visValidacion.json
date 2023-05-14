@@ -2,7 +2,7 @@
   "modelVersion" : "2.3",
   "id" : "visValidacion",
   "name" : "visValidacion",
-  "lastUpdate" : 1683804151629,
+  "lastUpdate" : 1684064010306,
   "rows" : [
     [
       {
@@ -210,7 +210,7 @@
                   },
                   "label" : {
                     "type" : "interpolation",
-                    "value" : "Submit"
+                    "value" : "CONFIRMAR REVISIÖN"
                   },
                   "dataToSend" : {
                     "type" : "expression",
