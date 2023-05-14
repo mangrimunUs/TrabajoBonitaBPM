@@ -1,112 +1,9 @@
 {
   "modelVersion" : "2.3",
-  "id" : "aceptarSistema3",
-  "name" : "aceptarSistema3",
-  "lastUpdate" : 1684077786073,
+  "id" : "nuevoSistemaForm",
+  "name" : "nuevoSistemaForm",
+  "lastUpdate" : 1684078566305,
   "rows" : [
-    [
-      {
-        "type" : "container",
-        "dimension" : {
-          "xs" : 12
-        },
-        "propertyValues" : { },
-        "reference" : "c26482c0-78c1-427b-b917-44994bd808c5",
-        "hasValidationError" : false,
-        "id" : "pbContainer",
-        "rows" : [
-          [
-            {
-              "type" : "component",
-              "dimension" : {
-                "md" : 12,
-                "sm" : 12,
-                "xs" : 12,
-                "lg" : 12
-              },
-              "propertyValues" : {
-                "hidden" : {
-                  "type" : "constant",
-                  "value" : false
-                },
-                "level" : {
-                  "type" : "constant",
-                  "value" : "Level 1"
-                },
-                "cssClasses" : {
-                  "type" : "constant",
-                  "value" : ""
-                },
-                "text" : {
-                  "type" : "interpolation",
-                  "value" : "{{ task.displayName }}"
-                },
-                "alignment" : {
-                  "type" : "constant",
-                  "value" : "center"
-                },
-                "dimension" : {
-                  "type" : "constant",
-                  "value" : 12
-                }
-              },
-              "reference" : "82b90537-7e75-4f0a-8653-f0f8a9321df6",
-              "hasValidationError" : false,
-              "id" : "pbTitle",
-              "description" : ""
-            }
-          ],
-          [
-            {
-              "type" : "component",
-              "dimension" : {
-                "md" : 12,
-                "sm" : 12,
-                "xs" : 12,
-                "lg" : 12
-              },
-              "propertyValues" : {
-                "allowHtml" : {
-                  "type" : "constant",
-                  "value" : true
-                },
-                "labelHidden" : {
-                  "type" : "constant",
-                  "value" : true
-                },
-                "hidden" : {
-                  "type" : "constant",
-                  "value" : false
-                },
-                "cssClasses" : {
-                  "type" : "constant",
-                  "value" : ""
-                },
-                "label" : {
-                  "type" : "interpolation"
-                },
-                "text" : {
-                  "type" : "interpolation",
-                  "value" : "{{ task.displayDescription }}"
-                },
-                "alignment" : {
-                  "type" : "constant",
-                  "value" : "left"
-                },
-                "dimension" : {
-                  "type" : "constant",
-                  "value" : 12
-                }
-              },
-              "reference" : "98163e44-06f0-40ff-b3c1-9e5e6a46e168",
-              "hasValidationError" : false,
-              "id" : "pbText",
-              "description" : ""
-            }
-          ]
-        ]
-      }
-    ],
     [
       {
         "type" : "formContainer",
@@ -114,7 +11,7 @@
           "xs" : 12
         },
         "propertyValues" : { },
-        "reference" : "00cb95b7-8ae5-4c91-9872-ad79e50a89da",
+        "reference" : "09f233d6-d03d-48f2-9d51-1c49d7c56d73",
         "hasValidationError" : false,
         "id" : "pbFormContainer",
         "container" : {
@@ -123,7 +20,7 @@
             "xs" : 12
           },
           "propertyValues" : { },
-          "reference" : "eddd96de-c480-4c05-8d8e-754ef3a577ac",
+          "reference" : "a77a9f2e-337f-47e5-92fc-1452efc55a37",
           "hasValidationError" : false,
           "id" : "pbContainer",
           "rows" : [
@@ -162,7 +59,7 @@
                     "value" : 12
                   }
                 },
-                "reference" : "143abd47-f998-4244-a861-fc229ccef201",
+                "reference" : "e3ddcef3-99dc-4703-882e-54e8d5a3a1a6",
                 "hasValidationError" : false,
                 "id" : "pbTitle",
                 "description" : ""
@@ -194,7 +91,7 @@
                     "value" : 12
                   }
                 },
-                "reference" : "2edb8dc4-e842-4f05-b6a0-34fabe41da30",
+                "reference" : "ed901a64-b4fa-4299-87d1-f064fa7caf04",
                 "hasValidationError" : false,
                 "id" : "pbContainer",
                 "rows" : [
@@ -230,7 +127,7 @@
                         },
                         "readOnly" : {
                           "type" : "constant",
-                          "value" : true
+                          "value" : false
                         },
                         "label" : {
                           "type" : "interpolation",
@@ -249,38 +146,96 @@
                         },
                         "value" : {
                           "type" : "variable",
-                          "value" : "sistema.sistema"
+                          "value" : "formInput.sistemaInput.sistema"
                         },
                         "required" : {
                           "type" : "constant",
                           "value" : true
+                        }
+                      },
+                      "reference" : "ed0e1b7f-5886-45f0-8ea7-eed102c8cb60",
+                      "hasValidationError" : false,
+                      "id" : "pbInput",
+                      "description" : ""
+                    }
+                  ],
+                  [
+                    {
+                      "type" : "component",
+                      "dimension" : {
+                        "md" : 12,
+                        "sm" : 12,
+                        "xs" : 12,
+                        "lg" : 12
+                      },
+                      "propertyValues" : {
+                        "hidden" : {
+                          "type" : "constant",
+                          "value" : true
+                        },
+                        "dateFormat" : {
+                          "type" : "constant",
+                          "value" : "MM/dd/yyyy"
+                        },
+                        "cssClasses" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "labelWidth" : {
+                          "type" : "constant",
+                          "value" : 1
+                        },
+                        "readOnly" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "label" : {
+                          "type" : "interpolation",
+                          "value" : "Fecha de Instalación"
+                        },
+                        "type" : {
+                          "type" : "constant"
+                        },
+                        "required" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "todayLabel" : {
+                          "type" : "constant",
+                          "value" : "Today"
+                        },
+                        "labelHidden" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "showToday" : {
+                          "type" : "constant",
+                          "value" : true
+                        },
+                        "labelPosition" : {
+                          "type" : "constant",
+                          "value" : "top"
+                        },
+                        "placeholder" : {
+                          "type" : "constant",
+                          "value" : "Enter a date (mm/dd/yyyy)"
+                        },
+                        "dimension" : {
+                          "type" : "constant",
+                          "value" : 12
+                        },
+                        "value" : {
+                          "type" : "variable",
+                          "value" : "formInput.sistemaInput.fechaInstalacion"
                         },
                         "allowHTML" : {
                           "type" : "constant",
                           "value" : false
-                        },
-                        "minLength" : {
-                          "type" : "constant",
-                          "value" : ""
-                        },
-                        "maxLength" : {
-                          "type" : "constant",
-                          "value" : ""
-                        },
-                        "min" : {
-                          "type" : "constant"
-                        },
-                        "max" : {
-                          "type" : "constant"
-                        },
-                        "step" : {
-                          "type" : "constant",
-                          "value" : 1
                         }
                       },
-                      "reference" : "b2e22e0b-d9d1-411c-b1eb-65b193a58346",
+                      "reference" : "891e7ff7-f310-4f67-86f2-252b9d6d31eb",
                       "hasValidationError" : false,
-                      "id" : "pbInput",
+                      "id" : "pbDatePicker",
                       "description" : ""
                     }
                   ],
@@ -300,7 +255,7 @@
                         },
                         "hidden" : {
                           "type" : "constant",
-                          "value" : false
+                          "value" : true
                         },
                         "labelPosition" : {
                           "type" : "constant",
@@ -316,11 +271,11 @@
                         },
                         "readOnly" : {
                           "type" : "constant",
-                          "value" : true
+                          "value" : false
                         },
                         "label" : {
                           "type" : "interpolation",
-                          "value" : "Tecnico"
+                          "value" : "Técnico"
                         },
                         "placeholder" : {
                           "type" : "constant"
@@ -335,7 +290,7 @@
                         },
                         "value" : {
                           "type" : "variable",
-                          "value" : "sistema.tecnico"
+                          "value" : "formInput.sistemaInput.tecnico"
                         },
                         "required" : {
                           "type" : "constant",
@@ -364,7 +319,7 @@
                           "value" : 1
                         }
                       },
-                      "reference" : "a450dbe5-01b2-4940-bffd-5a0f30cf5b14",
+                      "reference" : "564db6f1-3c2c-4793-ad27-73c99a46beee",
                       "hasValidationError" : false,
                       "id" : "pbInput",
                       "description" : ""
@@ -380,345 +335,66 @@
                         "lg" : 12
                       },
                       "propertyValues" : {
-                        "hidden" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "level" : {
-                          "type" : "constant",
-                          "value" : "Level 4"
-                        },
                         "cssClasses" : {
                           "type" : "constant",
                           "value" : ""
                         },
-                        "text" : {
-                          "type" : "interpolation",
-                          "value" : "Cliente"
-                        },
-                        "alignment" : {
+                        "hidden" : {
                           "type" : "constant",
-                          "value" : "left"
+                          "value" : false
                         },
-                        "dimension" : {
+                        "disabled" : {
                           "type" : "constant",
-                          "value" : 12
+                          "value" : false
+                        },
+                        "required" : {
+                          "type" : "constant",
+                          "value" : true
                         },
                         "allowHTML" : {
                           "type" : "constant",
                           "value" : false
-                        }
-                      },
-                      "reference" : "37c17c9f-2d60-4fa1-b4cb-f6571b49d653",
-                      "hasValidationError" : false,
-                      "id" : "pbTitle",
-                      "description" : ""
-                    }
-                  ],
-                  [
-                    {
-                      "type" : "container",
-                      "dimension" : {
-                        "md" : 12,
-                        "sm" : 12,
-                        "xs" : 12,
-                        "lg" : 12
-                      },
-                      "propertyValues" : {
-                        "repeatedCollection" : {
-                          "type" : "variable"
                         },
-                        "hidden" : {
+                        "labelHidden" : {
                           "type" : "constant",
                           "value" : false
                         },
-                        "cssClasses" : {
-                          "type" : "constant",
-                          "value" : ""
+                        "label" : {
+                          "type" : "interpolation",
+                          "value" : "Cliente"
                         },
-                        "dimension" : {
+                        "labelPosition" : {
                           "type" : "constant",
-                          "value" : 12
+                          "value" : "top"
+                        },
+                        "labelWidth" : {
+                          "type" : "constant",
+                          "value" : 1
+                        },
+                        "placeholder" : {
+                          "type" : "interpolation",
+                          "value" : "Seleccione un cliente"
+                        },
+                        "availableValues" : {
+                          "type" : "expression",
+                          "value" : "Cliente"
+                        },
+                        "displayedKey" : {
+                          "type" : "constant",
+                          "value" : "nombre"
+                        },
+                        "returnedKey" : {
+                          "type" : "constant",
+                          "value" : "nombre"
+                        },
+                        "value" : {
+                          "type" : "variable",
+                          "value" : "formInput.sistemaInput.cliente"
                         }
                       },
-                      "reference" : "b07bf3a1-a9ef-4d00-869f-0abc8ae31dbe",
+                      "reference" : "fa835b75-3294-4942-83a5-ec9a17f17a25",
                       "hasValidationError" : false,
-                      "id" : "pbContainer",
-                      "rows" : [
-                        [
-                          {
-                            "type" : "component",
-                            "dimension" : {
-                              "md" : 12,
-                              "sm" : 12,
-                              "xs" : 12,
-                              "lg" : 12
-                            },
-                            "propertyValues" : {
-                              "allowHtml" : {
-                                "type" : "constant",
-                                "value" : true
-                              },
-                              "labelHidden" : {
-                                "type" : "constant",
-                                "value" : false
-                              },
-                              "hidden" : {
-                                "type" : "expression",
-                                "value" : "!sistema_cliente.nombre"
-                              },
-                              "cssClasses" : {
-                                "type" : "constant",
-                                "value" : ""
-                              },
-                              "label" : {
-                                "type" : "interpolation",
-                                "value" : "Nombre"
-                              },
-                              "text" : {
-                                "type" : "interpolation",
-                                "value" : "{{sistema_cliente.nombre}}"
-                              },
-                              "alignment" : {
-                                "type" : "constant",
-                                "value" : "left"
-                              },
-                              "dimension" : {
-                                "type" : "constant",
-                                "value" : 12
-                              },
-                              "allowHTML" : {
-                                "type" : "constant",
-                                "value" : false
-                              },
-                              "labelPosition" : {
-                                "type" : "constant",
-                                "value" : "top"
-                              },
-                              "labelWidth" : {
-                                "type" : "constant",
-                                "value" : 4
-                              }
-                            },
-                            "reference" : "8163a560-371e-4ab6-accf-4824156517a7",
-                            "hasValidationError" : false,
-                            "id" : "pbText",
-                            "description" : ""
-                          }
-                        ],
-                        [
-                          {
-                            "type" : "component",
-                            "dimension" : {
-                              "md" : 12,
-                              "sm" : 12,
-                              "xs" : 12,
-                              "lg" : 12
-                            },
-                            "propertyValues" : {
-                              "allowHtml" : {
-                                "type" : "constant",
-                                "value" : true
-                              },
-                              "labelHidden" : {
-                                "type" : "constant",
-                                "value" : false
-                              },
-                              "hidden" : {
-                                "type" : "expression",
-                                "value" : "!sistema_cliente.direccion"
-                              },
-                              "cssClasses" : {
-                                "type" : "constant",
-                                "value" : ""
-                              },
-                              "label" : {
-                                "type" : "interpolation",
-                                "value" : "Direccion"
-                              },
-                              "text" : {
-                                "type" : "interpolation",
-                                "value" : "{{sistema_cliente.direccion}}"
-                              },
-                              "alignment" : {
-                                "type" : "constant",
-                                "value" : "left"
-                              },
-                              "dimension" : {
-                                "type" : "constant",
-                                "value" : 12
-                              }
-                            },
-                            "reference" : "5f30c6dd-0f19-40a1-966e-ac21050ebaa2",
-                            "hasValidationError" : false,
-                            "id" : "pbText",
-                            "description" : ""
-                          }
-                        ],
-                        [
-                          {
-                            "type" : "component",
-                            "dimension" : {
-                              "md" : 12,
-                              "sm" : 12,
-                              "xs" : 12,
-                              "lg" : 12
-                            },
-                            "propertyValues" : {
-                              "labelHidden" : {
-                                "type" : "constant",
-                                "value" : false
-                              },
-                              "hidden" : {
-                                "type" : "expression",
-                                "value" : "!sistema_cliente.empresa"
-                              },
-                              "cssClasses" : {
-                                "type" : "constant",
-                                "value" : ""
-                              },
-                              "disabled" : {
-                                "type" : "constant",
-                                "value" : true
-                              },
-                              "label" : {
-                                "type" : "interpolation",
-                                "value" : "Empresa"
-                              },
-                              "dimension" : {
-                                "type" : "constant",
-                                "value" : 12
-                              },
-                              "value" : {
-                                "type" : "variable",
-                                "value" : "sistema_cliente.empresa"
-                              },
-                              "required" : {
-                                "type" : "constant",
-                                "value" : false
-                              },
-                              "allowHTML" : {
-                                "type" : "constant",
-                                "value" : false
-                              }
-                            },
-                            "reference" : "1d0d4bc2-50c2-4192-80db-8393aea78d33",
-                            "hasValidationError" : false,
-                            "id" : "pbCheckbox",
-                            "description" : ""
-                          }
-                        ],
-                        [
-                          {
-                            "type" : "component",
-                            "dimension" : {
-                              "md" : 12,
-                              "sm" : 12,
-                              "xs" : 12,
-                              "lg" : 12
-                            },
-                            "propertyValues" : {
-                              "allowHtml" : {
-                                "type" : "constant",
-                                "value" : true
-                              },
-                              "labelHidden" : {
-                                "type" : "constant",
-                                "value" : false
-                              },
-                              "hidden" : {
-                                "type" : "expression",
-                                "value" : "!sistema_cliente.telefono"
-                              },
-                              "cssClasses" : {
-                                "type" : "constant",
-                                "value" : ""
-                              },
-                              "label" : {
-                                "type" : "interpolation",
-                                "value" : "Telefono"
-                              },
-                              "text" : {
-                                "type" : "interpolation",
-                                "value" : "{{sistema_cliente.telefono}}"
-                              },
-                              "alignment" : {
-                                "type" : "constant",
-                                "value" : "left"
-                              },
-                              "dimension" : {
-                                "type" : "constant",
-                                "value" : 12
-                              }
-                            },
-                            "reference" : "b269a5ac-dab4-4721-bef3-ca2f569ecfb1",
-                            "hasValidationError" : false,
-                            "id" : "pbText",
-                            "description" : ""
-                          }
-                        ],
-                        [
-                          {
-                            "type" : "component",
-                            "dimension" : {
-                              "md" : 12,
-                              "sm" : 12,
-                              "xs" : 12,
-                              "lg" : 12
-                            },
-                            "propertyValues" : {
-                              "allowHtml" : {
-                                "type" : "constant",
-                                "value" : true
-                              },
-                              "labelHidden" : {
-                                "type" : "constant",
-                                "value" : false
-                              },
-                              "hidden" : {
-                                "type" : "expression",
-                                "value" : "!sistema_cliente.correo"
-                              },
-                              "cssClasses" : {
-                                "type" : "constant",
-                                "value" : ""
-                              },
-                              "label" : {
-                                "type" : "interpolation",
-                                "value" : "Correo"
-                              },
-                              "text" : {
-                                "type" : "interpolation",
-                                "value" : "{{sistema_cliente.correo}}"
-                              },
-                              "alignment" : {
-                                "type" : "constant",
-                                "value" : "left"
-                              },
-                              "dimension" : {
-                                "type" : "constant",
-                                "value" : 12
-                              },
-                              "allowHTML" : {
-                                "type" : "constant",
-                                "value" : false
-                              },
-                              "labelPosition" : {
-                                "type" : "constant",
-                                "value" : "top"
-                              },
-                              "labelWidth" : {
-                                "type" : "constant",
-                                "value" : 4
-                              }
-                            },
-                            "reference" : "cc8d528e-72f2-4632-be0c-a5d94da32279",
-                            "hasValidationError" : false,
-                            "id" : "pbText",
-                            "description" : ""
-                          }
-                        ]
-                      ]
+                      "id" : "pbSelect"
                     }
                   ],
                   [
@@ -745,7 +421,7 @@
                         },
                         "readOnly" : {
                           "type" : "constant",
-                          "value" : true
+                          "value" : false
                         },
                         "allowHTML" : {
                           "type" : "constant",
@@ -772,7 +448,7 @@
                         },
                         "value" : {
                           "type" : "variable",
-                          "value" : "sistema.precio"
+                          "value" : "formInput.sistemaInput.precio"
                         },
                         "min" : {
                           "type" : "constant"
@@ -805,7 +481,7 @@
                           "value" : "whitespace"
                         }
                       },
-                      "reference" : "a85bb8b3-0d3a-4c87-977f-2e6f8513cb5e",
+                      "reference" : "aab2e28c-4725-417b-8015-48c0da866478",
                       "hasValidationError" : false,
                       "id" : "pbCurrencyInput"
                     }
@@ -834,11 +510,11 @@
                         },
                         "disabled" : {
                           "type" : "constant",
-                          "value" : true
+                          "value" : false
                         },
                         "label" : {
                           "type" : "interpolation",
-                          "value" : "Garantia"
+                          "value" : "Garantía"
                         },
                         "dimension" : {
                           "type" : "constant",
@@ -846,7 +522,7 @@
                         },
                         "value" : {
                           "type" : "variable",
-                          "value" : "sistema.garantia"
+                          "value" : "formInput.sistemaInput.garantia"
                         },
                         "required" : {
                           "type" : "constant",
@@ -857,7 +533,7 @@
                           "value" : false
                         }
                       },
-                      "reference" : "6ee85a6e-45cf-421f-873b-454a60121ced",
+                      "reference" : "af45b94c-e4a7-4ab5-9f14-a4f16b8a5e43",
                       "hasValidationError" : false,
                       "id" : "pbCheckbox",
                       "description" : ""
@@ -879,7 +555,7 @@
                         },
                         "hidden" : {
                           "type" : "constant",
-                          "value" : false
+                          "value" : true
                         },
                         "cssClasses" : {
                           "type" : "constant",
@@ -899,7 +575,7 @@
                         },
                         "value" : {
                           "type" : "variable",
-                          "value" : "sistema.aceptado"
+                          "value" : "formInput.sistemaInput.aceptado"
                         },
                         "required" : {
                           "type" : "constant",
@@ -910,7 +586,7 @@
                           "value" : false
                         }
                       },
-                      "reference" : "696d25cd-c9b8-4cce-9ef6-983e10e6ce71",
+                      "reference" : "7371c2ac-d5ef-4c0b-b6ba-0f8886712a19",
                       "hasValidationError" : false,
                       "id" : "pbCheckbox",
                       "description" : ""
@@ -973,7 +649,7 @@
                   },
                   "action" : {
                     "type" : "constant",
-                    "value" : "Submit task"
+                    "value" : "Start process"
                   },
                   "collectionToModify" : {
                     "type" : "variable"
@@ -994,7 +670,7 @@
                     "value" : 12
                   }
                 },
-                "reference" : "feb52633-ae80-4378-9bb0-4bcd16c72106",
+                "reference" : "0076c914-5820-4aae-b84a-59cf236d7798",
                 "hasValidationError" : false,
                 "id" : "pbButton",
                 "description" : ""
@@ -1046,7 +722,7 @@
                     "value" : 12
                   }
                 },
-                "reference" : "6e93ed24-1df2-476f-8fc5-1056af1bb024",
+                "reference" : "29ceb0ca-cc90-4afa-bfaa-d878a62c3438",
                 "hasValidationError" : false,
                 "id" : "pbText",
                 "description" : ""
@@ -1059,33 +735,36 @@
   ],
   "assets" : [
     {
-      "id" : "d421ad42-7a05-4a7d-89c3-910e2d0f8c54",
-      "name" : "localization.json",
-      "type" : "json",
+      "id" : "321edeb6-2b02-4526-9929-300420bf055c",
+      "name" : "style.css",
+      "type" : "css",
       "order" : 0,
       "external" : false
     },
     {
-      "id" : "28565057-eccc-4942-97c8-0b2946b5efbd",
-      "name" : "style.css",
-      "type" : "css",
+      "id" : "2f07979d-9f1f-4ec9-8069-835794081623",
+      "name" : "localization.json",
+      "type" : "json",
       "order" : 0,
       "external" : false
     }
   ],
   "inactiveAssets" : [ ],
   "variables" : {
-    "sistema_cliente" : {
-      "type" : "url",
+    "formInput" : {
+      "type" : "json",
       "value" : [
-        "{{sistema|lazyRef:'cliente'}}"
-      ],
-      "exposed" : false
-    },
-    "task" : {
-      "type" : "url",
-      "value" : [
-        "../API/bpm/userTask/{{taskId}}"
+        "{\r",
+        "  \"sistemaInput\" : {\r",
+        "    \"sistema\" : \"\",\r",
+        "    \"fechaInstalacion\" : null,\r",
+        "    \"tecnico\" : \"\",\r",
+        "    \"cliente\" : \"\",\r",
+        "    \"precio\" : 0,\r",
+        "    \"garantia\" : false,\r",
+        "    \"aceptado\" : false\r",
+        "  }\r",
+        "}"
       ],
       "exposed" : false
     },
@@ -1104,61 +783,41 @@
       ],
       "exposed" : false
     },
-    "sistema" : {
-      "type" : "url",
-      "value" : [
-        "../{{context.sistema_ref.link}}"
-      ],
-      "exposed" : false
-    },
     "formOutput" : {
       "type" : "expression",
       "value" : [
-        "if( $data.sistema && $data.sistema_cliente && $data.sistema_cliente_sistemas ){",
-        "\t//attach lazy references variables to parent variables",
-        "\t$data.sistema.cliente = $data.sistema_cliente;",
-        "\t$data.sistema.cliente.sistemas = $data.sistema_cliente_sistemas;",
-        "\treturn {",
-        "\t\t//map sistema variable to expected task contract input",
-        "\t\tsistemaInput: {",
-        "\t\t\tsistema: $data.sistema.sistema !== undefined ? $data.sistema.sistema : null,",
-        "\t\t\ttecnico: $data.sistema.tecnico !== undefined ? $data.sistema.tecnico : null,",
-        "\t\t\tcliente: $data.sistema.cliente ? {",
-        "\t\t\t\tpersistenceId_string: $data.sistema.cliente.persistenceId_string !== undefined ? $data.sistema.cliente.persistenceId_string : null",
-        "\t\t\t} : null,",
-        "\t\t\tprecio: $data.sistema.precio !== undefined ? $data.sistema.precio : null,",
-        "\t\t\tgarantia: $data.sistema.garantia !== undefined ? $data.sistema.garantia : null,",
-        "\t\t\taceptado: $data.sistema.aceptado !== undefined ? $data.sistema.aceptado : null",
-        "\t\t}",
-        "\t}",
+        "$data.formInput.sistemaInput.tecnico=$data.tecnico_ini_username",
+        "",
+        "return {",
+        "\tsistemaInput: $data.formInput.sistemaInput",
         "}"
       ],
       "exposed" : false
     },
-    "context" : {
-      "type" : "url",
+    "Cliente" : {
+      "type" : "businessdata",
       "value" : [
-        "../API/bpm/userTask/{{taskId}}/context"
+        "{\"displayValue\":\"find [com.company.model.Cliente]\",\"businessObjectName\":\"Cliente\",\"query\":{\"name\":\"find\",\"displayName\":\"find\"},\"id\":\"com.company.model.Cliente\",\"filters\":[],\"pagination\":{\"p\":\"0\",\"c\":\"10\"}}"
       ],
       "exposed" : false
     },
-    "sistema_cliente_sistemas" : {
+    "tecnico_ini" : {
       "type" : "url",
       "value" : [
-        "{{sistema_cliente|lazyRef:'sistemas'}}"
+        "../API/system/session/1"
       ],
       "exposed" : false
     },
-    "taskId" : {
-      "type" : "urlparameter",
+    "tecnico_ini_username" : {
+      "type" : "expression",
       "value" : [
-        "id"
+        "return $data.tecnico_ini.user_name;"
       ],
       "exposed" : false
     }
   },
   "hasValidationError" : false,
-  "uuid" : "4b2a4b9f-ef4b-4749-87fe-f2a265e15754",
+  "uuid" : "93c04279-d5df-4d3a-a4b0-6516182a4745",
   "type" : "form",
   "description" : "Page generated with Bonita UI designer"
 }

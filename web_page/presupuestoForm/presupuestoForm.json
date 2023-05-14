@@ -2,7 +2,7 @@
   "modelVersion" : "2.3",
   "id" : "presupuestoForm",
   "name" : "presupuestoForm",
-  "lastUpdate" : 1683808220701,
+  "lastUpdate" : 1684067870496,
   "rows" : [
     [
       {
@@ -731,7 +731,7 @@
                   },
                   "required" : {
                     "type" : "constant",
-                    "value" : true
+                    "value" : false
                   },
                   "todayLabel" : {
                     "type" : "constant",
@@ -1214,7 +1214,7 @@
         "  \"servicioInput\" : \"\",\r",
         "  \"fechaPago\" : null,\r",
         "  \"precioInput\" : 0,\r",
-        "  \"iva\" : 0,\r",
+        "  \"ivaInput\" : 0,\r",
         "  \"precioFinalInput\" : 0\r",
         "}"
       ],
@@ -1260,8 +1260,8 @@
         "\t\tservicioInput: $data.formInput.servicioInput,",
         "\t\tfechaPago: $data.formInput.fechaPago,",
         "\t\tprecioInput: $data.formInput.precioInput,",
-        "\t\tiva: $data.formInput.iva,",
-        "\t\tprecioFinalInput: $data.formInput.precioInput*(1+$data.formInput.iva/100)",
+        "\t\tivaInput: $data.formInput.ivaInput,",
+        "\t\tprecioFinalInput: $data.formInput.precioInput*(1+$data.formInput.ivaInput/100)",
         "\t}",
         "}"
       ],
